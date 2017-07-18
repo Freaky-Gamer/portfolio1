@@ -13,13 +13,15 @@ h4{
 text-align:center;
 }
   
-  #p01{
+  p.01{
     text-align:center;
     color:MediumOrchid;
+    display:none;
   }
-  #p02{
+  p.02{
     text-align:center;
     color:Blue;
+    display:none;
   }
   
   </style>
@@ -37,19 +39,27 @@ graduating applicant that meets several requirements. One of the requirements fo
 computer building camp.</p>
   
 <pre>
-  <p id="p02"><b>Likes      </b></p>
-  <p id="p01"><b>                 Dislikes</b></p>
-  <p id="p02"> -Doctor Who      </p>
-  <p id="p01">                    -Crowds</p>
-  <p id="p02"> -Sherlock        </p>
-    <p id="p01">                  -Cities</p>
-  <p id="p02"> -Harry Potter    </p>
-    <p id="p01">                  -Heights</p>
-  <p id="p02"> -Anime           </p>
-    <p id="p01">                  -Presents</p>
-  <p id="p02"> -Video Games     </p>
+<button type="button"
+onclick="document.getElementById('p02').style.display='block'">Click To Know What I Like!
+</button>
+
+<button type="button"
+onclick="document.getElementById('p01').style.display='block'">Click To Know What I Dislike!
+</button>
+
+  <p class="p02"><b>Likes      </b></p>
+  <p class="p01"><b>                 Dislikes</b></p>
+  <p class="p02"> -Doctor Who      </p>
+  <p class="p01">                    -Crowds</p>
+  <p class="p02"> -Sherlock        </p>
+    <p class="p01">                  -Cities</p>
+  <p class="p02"> -Harry Potter    </p>
+    <p class="p01">                  -Heights</p>
+  <p class="p02"> -Anime           </p>
+    <p class="p01">                  -Presents</p>
+  <p class="p02"> -Video Games     </p>
   </pre>
-  <h4>FunFact</h4>
+  <h4 text-align:left>FunFact</h4>
   <p>I want to be a video game designer.</p>
   
   <img src="Capture.PNG" alt="Game made on a website called scratch" width="200" height="150">
