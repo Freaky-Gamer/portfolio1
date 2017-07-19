@@ -28,57 +28,77 @@ text-align:center;
 </head>
 <body style="background-color:PaleGoldenRod;">
   
+window.alert(This page is about me, you can learn more about me if you click on the buttons!)   
+//This will have a window alert telling you how to interact with my page.
+  
 <h1><strong>Alexandrea Whitehouse</strong></h1>
   
-<h4 text-align:center><b>Bio</b></h4>
+<button type="button"
+onclick="document.getElementById("main").innerHTML=I am a sixteen year-old girl who lives in the small town of North Berwick, Maine.
+I joined <abbr title="Girls Who Code">GWC</abbr> as to complete the <abbr title="Science, Technology, Engineering, and 
+Math">S.T.E.M</abbr> that my school gives out every year to a graduating applicant that meets several requirements. One of the 
+requirements for the endorsement is to have two <abbr title="Extended Learning Opportunity">E.L.Os</abbr>. I have already completed 
+one of the E.L.Os last Summer when I went to a computer building camp.">Bio</button>
   
-<p text-align:center>I am a sixteen year-old girl who lives in the small town of North Berwick, Maine. I joined <abbr title="Girls Who Code">GWC</abbr> 
-as to complete the <abbr title="Science, Technology, Engineering, and Math">S.T.E.M</abbr> that my school gives out every year to a 
-graduating applicant that meets several requirements. One of the requirements for the endorsement is to have two 
-<abbr title="Extended Learning Opportunity">E.L.Os</abbr>. I have already completed one of the E.L.Os last Summer when I went to a 
-computer building camp.</p>
- <button type="button"
+//My bio will show with the click of the button above
+  
+<p text-align:center id="main"></p>
+ 
+  <button type="button"
 onclick="document.getElementById('likes').style.display='block'">Click To Know What I Like!
 </button>
-
+  
+//The first button when clicked will show some things I like and the second button when clicked will list some things that I dislike
+  
 <button type="button"
 onclick="document.getElementById('dislikes').style.display='block'">Click To Know What I Dislike!
-</button> 
+</button>
+  
 <pre>
-
 
   <p class="dislikes"><b>Likes      </b></p>
   <p class="likes"><b>                 Dislikes</b></p>
   <p class="dislikes"> -Doctor Who      </p>
   <p class="likes">                    -Crowds</p>
   <p class="dislikes"> -Sherlock        </p>
-    <p class="likes">                  -Cities</p>
+  <p class="likes">                    -Cities</p>
   <p class="dislikes"> -Harry Potter    </p>
-    <p class="likes">                  -Heights</p>
+  <p class="likes">                    -Heights</p>
   <p class="dislikes"> -Anime           </p>
-    <p class="likes">                  -Presents</p>
+  <p class="likes">                    -Presents</p>
   <p class="dislikes"> -Video Games     </p>
-  </pre>
-  <h4 text-align:left>FunFact</h4>
+  
+</pre>
+//above are my list of likes and dislikes centered in the middle of the page
+  
+  <h3 text-align:left>FunFact</h3>
   <p>I want to be a video game designer.</p>
+//a fun fact about me
   
   <img src="Capture.PNG" alt="Game made on a website called scratch" width="200" height="150">
+//This should display an image of the scratch game that me and two others made with the discription below in lines 76-79
+  
   <p>This is a game that me and a few other girls made. My friend Gabby drew the fish and the background. 
   Catherine came up with the actual idea of the game. And Pei Yoa coded a bubble that floats across the screen from time to
   time that helps you win the game. The objective was to avoid the fish, and catch the bubbles for air.</p>
   
-  <h1>Reflection</h1>
-  <h3 text-align:center>Python VS. Scratch</h3>
-  <h5>Similarities                                                Differences</h5>
-  <p> -Beginner friendly                                           -Write out the code</p>
-  <p> -Uses the same functions                                     -Different names for some things</p>
-  <p>                                                              -I like Python better</p>
+  <pre>
+                                              <h2>Reflection</h2>
+        <h3 text-align:center>Python VS. Scratch</h3>
+        <h5>Similarities                                                Differences</h5>
+        <p> -Beginner friendly                                           -Write out the code</p>
+        <p> -Uses the same functions                                     -Different names for some things</p>
+        <p>                                                              -I like Python better</p>
+  </pre>
+  //above should be a reflection on similarities and differences I found in Python and Scratch in the center of the page with the format seen
   
-  <h4>Favorite Links</h4>
+  <h3>Favorite Links</h4>
  <pre>
-         <h6>YouTubers                                                                            Songs         </h5>
+         <h3>YouTubers                                                                            Songs         </h3>
   <a href="https://www.youtube.com/channel/UCAKdbp1bKIdjqjRLIKvXCRA">Nathan Sharp</a>   <a href="https://www.youtube.com/watch?v=RLcdPpjKKHo">In The Middle Of Starting Over</a>
   <a href="https://www.youtube.com/user/peterhollens/videos">Peter Hollens</a>
 </pre>
+//above should be three links, two to the channels of two of my favorite YouTube singers and the other a link to one of my favorite songs
+  
 </body>
 </html>
