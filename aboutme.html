@@ -8,7 +8,6 @@ text-align:center;
 color:(70,80,90);
 font-size:56px;
 }
-
 h4{
 text-align:center;
 }
@@ -26,7 +25,7 @@ text-align:center;
   
   </style>
 </head>
-<body onload='myfunction()'>
+<body style=background-color:CornSilk; onload='myfunction();'>
 
  <h1><strong>Alexandrea Whitehouse</strong></h1> 
  
@@ -34,45 +33,43 @@ text-align:center;
   function myfunction(){
    alert("This page is about me, you can learn more about me if you click on the buttons!"); }
  
-    
-//This will have a window alert telling you how to interact with my page.
-  
-<button type="button"
-onclick="document.getElementById("main").style.display='block'">Bio</button>
-//My bio will show with the click of the button above
+    //This will have a window alert telling you how to interact with my page.
   
   </script>
-     
-<p id="main" style="text-align:center; display=none;">I am a sixteen year-old girl who lives in the small town of North Berwick, Maine.
+  
+<button type="button"
+onclick="document.getElementById('main').style.display='block';">Bio</button>  
+<!--My bio will show with the click of the button above-->
+
+<p id="main" style="text-align:center; display:none;">I am a sixteen year-old girl who lives in the small town of North Berwick, Maine.
 I joined <abbr title="Girls Who Code">GWC</abbr> as to complete the <abbr title="Science, Technology, Engineering, and 
 Math">S.T.E.M</abbr> that my school gives out every year to a graduating applicant that meets several requirements. One of the 
 requirements for the endorsement is to have two <abbr title="Extended Learning Opportunity">E.L.Os</abbr>. I have already completed 
 one of the E.L.Os last Summer when I went to a computer building camp."</p>
 
-  <script>
-  <button type="button"
-onclick="document.getElementById('likes').style.display='block'">Click To Know What I Like!
-</button>
-  
-//The first button when clicked will show some things I like and the second button when clicked will list some things that I dislike
-  
 <button type="button"
-onclick="document.getElementById('dislikes').style.display='block'">Click To Know What I Dislike!
+onclick="document.getElementById('likes').style.display='block';">My Likes
 </button>
-  </script>  
+<!--The first button when clicked will show some things I like and the second button when clicked will list some things that I dislike-->
+
+<button type="button"
+onclick="document.getElementById('dislikes').style.display='block';">My dislikes
+</button>
+<!--The button above should display my dislikes when clicked-->
+ 
 <pre>
 
-  <p class="dislikes"><b>Likes      </b></p>
-  <p class="likes"><b>                 Dislikes</b></p>
-  <p class="dislikes"> -Doctor Who      </p>
-  <p class="likes">                    -Crowds</p>
-  <p class="dislikes"> -Sherlock        </p>
-  <p class="likes">                    -Cities</p>
-  <p class="dislikes"> -Harry Potter    </p>
-  <p class="likes">                    -Heights</p>
-  <p class="dislikes"> -Anime           </p>
-  <p class="likes">                    -Presents</p>
-  <p class="dislikes"> -Video Games     </p>
+  <p class="likes" id="likes"><b>Likes      </b></p>
+  <p class="dislikes" id="dislikes"><b>                 Dislikes</b></p>
+  <p class="likes" id="likes"> -Doctor Who      </p>
+  <p class="dislikes" id="dislikes">                    -Crowds</p>
+  <p class="likes" id="likes"> -Sherlock        </p>
+  <p class="dislikes" id="dislikes">                    -Cities</p>
+  <p class="dislikes" id="likes"> -Harry Potter    </p>
+  <p class="likes" id="dislikes">                    -Heights</p>
+  <p class="likes" id="likes"> -Anime           </p>
+  <p class="dislikes" id="dislikes">                    -Presents</p>
+  <p class="likes" id="likes"> -Video Games     </p>
   
 </pre>
 <!-- are my list of likes and dislikes centered in the middle of the page-->
